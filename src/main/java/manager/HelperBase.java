@@ -4,6 +4,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class HelperBase {
     WebDriver wd;
@@ -43,6 +47,21 @@ public class HelperBase {
     public boolean isElementPresent(By locator) {
         return wd.findElements(locator).size()>0;
     }
+    public void submit() {
+        click(By.xpath("//*[@type='submit']"));
+        // click(By.xpath("//*[text()='Y’alla!']"));
+    }
 
+    public String getMessage() {
+//        WebElement element = wd.findElement(By.cssSelector(".dialog-container>h2"));
+//        String text = element.getText();
+//        return text;
+        //pause(2000);
+        //wait
+        WebDriverWait wait = new WebDriverWait(wd, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.visibilityOf(wd.findElement(By.cssSelector(".dialog-container>h2"))));
+
+        return wd.findElement(By.cssSelector(".dialog-container>h2")).getText();
+    }
 
 }

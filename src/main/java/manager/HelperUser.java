@@ -3,6 +3,10 @@ package manager;
 import models.User;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class HelperUser extends HelperBase {
     public HelperUser(WebDriver wd) {
@@ -25,18 +29,9 @@ public class HelperUser extends HelperBase {
     }
 
 
-    public void submit() {
-        click(By.xpath("//*[@type='submit']"));
-        // click(By.xpath("//*[text()='Y’alla!']"));
-    }
 
-    public String getMessage() {
-//        WebElement element = wd.findElement(By.cssSelector(".dialog-container>h2"));
-//        String text = element.getText();
-//        return text;
-        //pause(2000);
-        return wd.findElement(By.cssSelector(".dialog-container>h2")).getText();
-    }
+
+
 
     public void clickOkButton() {
         if (isElementPresent(By.xpath("//button[text()='Ok']")))
@@ -105,5 +100,12 @@ public class HelperUser extends HelperBase {
         boolean result = element.isEnabled();
 
         return res && !result;
+    }
+
+    public void login(User user) {
+        openLoginForm();
+        fillLoginForm(user);
+        submit();
+        clickOkButton();
     }
 }
