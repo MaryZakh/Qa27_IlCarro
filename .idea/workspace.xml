@@ -5,12 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ea1ad7c9-001c-42a0-93de-f944458b9177" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/manager/HelperCar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/models/Car.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/tests/AddNewCarTests.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/manager/ApplicationManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -95,7 +90,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/Qa27/Qa27_IlCarro",
+    "last_opened_file_path": "D:/QA_44/Qa44_Trello_111",
     "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
@@ -224,9 +219,9 @@
       <list>
         <item itemvalue="Gradle.RegistrationTests.registrationSuccess" />
         <item itemvalue="Gradle.RegistrationTests" />
-        <item itemvalue="Gradle.LoginTests" />
-        <item itemvalue="Gradle.LoginTests.loginUnregisteredUser" />
         <item itemvalue="Gradle.LoginTests.loginWrongPassword" />
+        <item itemvalue="Gradle.LoginTests.loginUnregisteredUser" />
+        <item itemvalue="Gradle.LoginTests" />
       </list>
     </recent_temporary>
   </component>

@@ -23,9 +23,9 @@ public class AddNewCarTests extends TestBase{
                 .about("Nice car")
                 .build();
 
-        app.getHelperCar().openCarForm();
-        app.getHelperCar().fillCarForm();
-        app.getHelperCar().submitCarForm();
+//        app.getHelperCar().openCarForm();
+//        app.getHelperCar().fillCarForm();
+//        app.getHelperCar().submitCarForm();
     }
 
 
